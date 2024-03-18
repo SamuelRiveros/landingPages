@@ -3,29 +3,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif
 }
 body{
+    background-color: var(--color-primary);
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr) 3fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas: 
-    ". . . logo"
-    "titulo titulo titulo logo"
-    "titulo titulo titulo logo"
-    "parrafo parrafo parrafo logo"
-    "boton . . logo"
-    "caja_1 caja_2 caja_3 ."
+    "logo logo logo ."
+    "logo logo logo titulo "
+    "logo logo logo titulo "
+    "logo logo logo parrafo "
+    "logo logo logo boton "
     ;
-}
-.banner{
-    background-color: var(--color-primary);
-    position: absolute;
-    width: 100%;
-    height: 85vh;
-    z-index: -5;
 }
 .item_1{
     margin-left: 25px;
@@ -41,9 +34,11 @@ body{
 .item_2{
     /* background: olivedrab; */
     grid-area: logo;
+    width: 100%;
+    height: 100%;
 }
 .item_2 img{
-    width: 100%;
+    width: 90%;
     height: 110%;
     object-fit: contain;
 }
@@ -72,25 +67,6 @@ body{
     padding: 20px;
     font-size: 1.1rem;
     color: var(--color-ternary);
-}
-.item_5, .item_6, .item_7{
-    position: relative;
-    top: -45px;
-    display: flex;
-    justify-content: center;
-}
-.item_5{
-    /* background: #2d7aa0; */
-    grid-area: caja_1;
-    
-}
-.item_6{
-    /* background: #31b80b; */
-    grid-area: caja_2;
-}
-.item_7{
-    /* background: #b20bb8; */
-    grid-area: caja_3;
 }
 
 .item_4 button:hover {
