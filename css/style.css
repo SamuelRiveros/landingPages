@@ -30,16 +30,16 @@ body{
 
 .container > div{
     display: flex;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .item_1{
     grid-area: index;
     display: flex;
     flex-direction: column;
-    margin: 100px;
     justify-content: center;
+    margin: 100px;
 }
 
 .item_1 > *{
@@ -66,10 +66,75 @@ body{
     font-size: 2rem;
 }
 .item_1 button{
+    font-size: 2rem;
     border: 0;
     background: #ffff;
     border-radius: 50px;
     height: 80px;
     width: 230px;
-    font-size: 2rem;
 }
+
+.item_2{
+    grid-area: img1;
+}
+
+.item_3{
+    grid-area: img2;
+}
+
+.item_4{
+    grid-area: img3;
+}
+
+.item_5{
+    grid-area: img4;
+}
+
+.item_6{
+    grid-area: img5;
+}
+
+.item_7{
+    grid-area: img6;
+}
+
+.item_8{
+    grid-area: img7;
+}
+
+.item_9{
+    grid-area: img8;
+}
+
+.item_10{
+    grid-area: img9;
+}
+
+.item_11{
+    grid-area: img10;
+}
+
+.item_12{
+    grid-area: img11;
+}
+
+.item_13{
+    grid-area: img12;
+}
+
+.item_14{
+    grid-area: img13;
+}
+
+.item_15{
+    grid-area: img14;
+}
+
+.item_16{
+    grid-area: img15;
+}
+
+.item_17{
+    grid-area: img16;
+}
+
