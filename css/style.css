@@ -1,0 +1,75 @@
+@import url(variables.css);
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--color-background);
+    font-family: var(--font-primary);
+}
+.Principal{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    grid-template-areas: 
+    "index img1 img2 img3 img4"
+    "index img5 img6 img7 img8"
+    "index img9 img10 img11 img12"
+    "index img13 img14 img15 img16"
+    ;
+}
+
+
+.container > div img{
+    width: 20vh;
+    margin-top: 15px;
+}
+
+.container > div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item_1{
+    grid-area: index;
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    justify-content: center;
+}
+
+.item_1 > *{
+    margin: 15px 0
+}
+
+
+.firsth1, .sech1, .thirdh1{
+    font-size: 5rem;
+}
+
+.firsth1{
+    color: var(--color-primary);
+}
+.sech1{
+    color: var(--color-secundary);
+}
+.thirdh1{
+    color: var(--color-ternary);
+}
+
+.item_1 p{
+    color: #ffff;
+    font-size: 2rem;
+}
+.item_1 button{
+    border: 0;
+    background: #ffff;
+    border-radius: 50px;
+    height: 80px;
+    width: 230px;
+    font-size: 2rem;
+}
