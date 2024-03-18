@@ -23,12 +23,12 @@ body{
 }
 
 
-.container > div img{
+.Principal > div img{
     width: 20vh;
     margin-top: 15px;
 }
 
-.container > div{
+.Principal > div{
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -138,3 +138,37 @@ body{
     grid-area: img16;
 }
 
+@media (width < 700px){
+    .Principal{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+
+        grid-template-areas: 
+        "index index "
+        "img1 img2"
+        "img3 img4"
+        "img5 img6"
+        "img7 img8"
+        "img9 img10"
+        "img11 img12"
+        "img13 img14"
+        "img15 img16"
+        ;
+    }
+
+    .Principal > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .item_1{
+        align-items: center;
+        text-align: center;
+        margin: 0px;
+    }
+}
